@@ -21,18 +21,18 @@
 
 ## Решение
 
-1-3. Дописал еще один play, который устанавливает LightHouse. Использую модули  `get_url`, `template`, `yum`, `service`, `file`. Происходит установка и конфигурирование веб-сервера Nginx, установка и конфигурирование LightHouse, запуск служб Nginx и LightHouse.
+#1-3. Дописал еще один play, который устанавливает LightHouse. Использую модули  `get_url`, `template`, `yum`, `service`, `file`. Происходит установка и конфигурирование веб-сервера Nginx, установка и конфигурирование LightHouse, запуск служб Nginx и LightHouse.
 
-4. Подготовил свой inventory-файл `prod.yml`:
+#4. Подготовил свой inventory-файл `prod.yml`:
 
 ![monitoring](https://github.com/PatKolzin/Ansible/blob/main/03/Image/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA.png)
 
 
-5. Запустил ansible-lint site.yml. Были ошибки в использовании старых наименований модулей, отсутствии прав на скачиваемые или создаваемые файлы. Ошибки исправлены.
+#5. Запустил ansible-lint site.yml. Были ошибки в использовании старых наименований модулей, отсутствии прав на скачиваемые или создаваемые файлы. Ошибки исправлены.
 
-6. Запустил playbook с флагом `--check`. Выполнение playbook завершилось с ошибкой, т.к. этот флаг не вносит изменения в системы, а выполнение playbook требует скачивания и установки пакетов приложений.
+#6. Запустил playbook с флагом `--check`. Выполнение playbook завершилось с ошибкой, т.к. этот флаг не вносит изменения в системы, а выполнение playbook требует скачивания и установки пакетов приложений.
 
-7. Запущен playbook на `prod.yml` окружении с флагом `--diff`. Изменения в систему внесены:
+#7. Запущен playbook на `prod.yml` окружении с флагом `--diff`. Изменения в систему внесены:
 
 <details>
    <summary>ansible-playbook -i inventory/prod.yml site.yml --diff</summary>
@@ -247,7 +247,7 @@ vector-01                  : ok=8    changed=5    unreachable=0    failed=0    s
 ```
 </details>
 
-8. Повторно запущен playbook с флагом `--diff`. Playbook идемпотентен, изменения связаны с перезапуском сервиса Vector:
+#8. Повторно запущен playbook с флагом `--diff`. Playbook идемпотентен, изменения связаны с перезапуском сервиса Vector:
 
 <details>
     <summary>ansible-playbook -i inventory/prod.yml site.yml --diff</summary>
