@@ -246,7 +246,7 @@ vector-01                  : ok=8    changed=5    unreachable=0    failed=0    s
 
 
 ```
-<details>
+</details>
 
 8. Повторно запущен playbook с флагом `--diff`. Playbook идемпотентен, изменения связаны с перезапуском сервиса Vector:
 
@@ -339,6 +339,6 @@ lighthouse-01              : ok=7    changed=0    unreachable=0    failed=0    s
 vector-01                  : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0 
 
 ```
-<details>
+</details>
 
 
