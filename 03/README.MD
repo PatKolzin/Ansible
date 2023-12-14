@@ -34,10 +34,10 @@
 
 7. Запущен playbook на `prod.yml` окружении с флагом `--diff`. Изменения в систему внесены:
 
-   <details>
-       <summary>ansible-playbook -i inventory/prod.yml site.yml --diff</summary>
+<details>
+   <summary>ansible-playbook -i inventory/prod.yml site.yml --diff</summary>
 
-   ```shell
+```shell
 
 pat@yubunta:~/ansible/Ansible/03/playbook$ ansible-playbook -i inventory/prod.yml site.yml --diff
 
@@ -244,15 +244,15 @@ PLAY RECAP *********************************************************************
 clickhouse-01              : ok=9    changed=6    unreachable=0    failed=0    skipped=0    rescued=1    ignored=0   
 lighthouse-01              : ok=8    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 vector-01                  : ok=8    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-   ```
-   </details>
+```
+</details>
 
 8. Повторно запущен playbook с флагом `--diff`. Playbook идемпотентен, изменения связаны с перезапуском сервиса Vector:
 
-   <details>
-       <summary>ansible-playbook -i inventory/prod.yml site.yml --diff</summary>
+<details>
+    <summary>ansible-playbook -i inventory/prod.yml site.yml --diff</summary>
 
-   ```shell
+```shell
 pat@yubunta:~/ansible/Ansible/03/playbook$ ansible-playbook -i inventory/prod.yml site.yml --diff
 
 PLAY [Ping] ***************************************************************************************************************************************************************************
@@ -336,7 +336,7 @@ PLAY RECAP *********************************************************************
 clickhouse-01              : ok=8    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=0   
 lighthouse-01              : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 vector-01                  : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0 
-   ```
-   </details>
+```
+</details>
 
 
