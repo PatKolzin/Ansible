@@ -37,7 +37,7 @@
    <details>
        <summary>ansible-playbook -i inventory/prod.yml site.yml --diff</summary>
 
-```shell
+   ```shell
 
 pat@yubunta:~/ansible/Ansible/03/playbook$ ansible-playbook -i inventory/prod.yml site.yml --diff
 
