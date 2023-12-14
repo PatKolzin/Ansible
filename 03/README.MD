@@ -33,8 +33,8 @@
 
 7. Запущен playbook на `prod.yml` окружении с флагом `--diff`. Изменения в систему внесены:
 
-<details>
-    <summary>ansible-playbook -i inventory/prod.yml site.yml --diff</summary>
+   <details>
+       <summary>ansible-playbook -i inventory/prod.yml site.yml --diff</summary>
 
 ```shell
 
