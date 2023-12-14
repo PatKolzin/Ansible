@@ -8,7 +8,7 @@
 
 1. Допишите playbook: нужно сделать ещё один play, который устанавливает и настраивает LightHouse.
 
-[Playbook] (https://github.com/PatKolzin/Ansible/tree/main/03/playbook)
+[Playbook](https://github.com/PatKolzin/Ansible/tree/main/03/playbook)
 
 2. При создании tasks рекомендую использовать модули: `get_url`, `template`, `yum`, `apt`.
 3. Tasks должны: скачать статику LightHouse, установить Nginx или любой другой веб-сервер, настроить его конфиг для открытия LightHouse, запустить веб-сервер.
