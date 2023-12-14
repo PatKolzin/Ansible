@@ -25,7 +25,7 @@
 
 4. Подготовил свой inventory-файл `prod.yml`:
 
-![monitoring](https://)
+![monitoring](https://github.com/PatKolzin/Ansible/blob/main/03/Image/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA.png)
 
 
 5. Запустил ansible-lint site.yml. Были ошибки в использовании старых наименований модулей, отсутствии прав на скачиваемые или создаваемые файлы. Ошибки исправлены.
