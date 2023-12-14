@@ -35,7 +35,9 @@
 
 <details>
     <summary>ansible-playbook -i inventory/prod.yml site.yml --diff</summary>
-```
+
+```shell
+
 pat@yubunta:~/ansible/Ansible/03/playbook$ ansible-playbook -i inventory/prod.yml site.yml --diff
 
 PLAY [Ping] ***************************************************************************************************************************************************************************
@@ -241,10 +243,6 @@ PLAY RECAP *********************************************************************
 clickhouse-01              : ok=9    changed=6    unreachable=0    failed=0    skipped=0    rescued=1    ignored=0   
 lighthouse-01              : ok=8    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 vector-01                  : ok=8    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-
-
-
-
 ```
 </details>
 
@@ -252,8 +250,8 @@ vector-01                  : ok=8    changed=5    unreachable=0    failed=0    s
 
 <details>
     <summary>ansible-playbook -i inventory/prod.yml site.yml --diff</summary>
-```
 
+```shell
 pat@yubunta:~/ansible/Ansible/03/playbook$ ansible-playbook -i inventory/prod.yml site.yml --diff
 
 PLAY [Ping] ***************************************************************************************************************************************************************************
@@ -337,7 +335,6 @@ PLAY RECAP *********************************************************************
 clickhouse-01              : ok=8    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=0   
 lighthouse-01              : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 vector-01                  : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0 
-
 ```
 </details>
 
