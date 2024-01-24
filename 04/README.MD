@@ -59,9 +59,9 @@
 
 8. Выложил роли в репозитории. Ссылки на репозитории ролей:
 
-[vector-role](https://github.com/PatKolzin/vector-role)
+      [vector-role](https://github.com/PatKolzin/vector-role)
 
-[lighthouse-role](https://github.com/PatKolzin/lighthouse-role)
+      [lighthouse-role](https://github.com/PatKolzin/lighthouse-role)
 
 9. Изменил playbook на использование roles.
 
