@@ -59,12 +59,12 @@
 
 8. Выложил роли в репозитории. Ссылки на репозитории ролей:
 
-[vector-role](https://github.com/12sergey12/vector-role)
+[vector-role](https://github.com/PatKolzin/vector-role)
 
-[lighthouse-role](https://github.com/12sergey12/lighthouse-role)
+[lighthouse-role](https://github.com/PatKolzin/lighthouse-role)
 
 9. Изменил playbook на использование roles.
 
-10. Выложил playbook в репозиторий. Ссылка на playbook: [playbook](https://github.com/12sergey12/8.4_ansible_role/tree/main/playbook)
+10. Выложил playbook в репозиторий. Ссылка на playbook: [playbook](https://github.com/PatKolzin/Ansible/tree/main/04/playbook)
 
 ---
