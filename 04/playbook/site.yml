@@ -1,0 +1,29 @@
+---
+- name: Ping
+  tags: [ping]
+  hosts:
+    - clickhouse
+    - vector
+    - lighthouse
+  tasks:
+    - name: Check availability servers
+      ping:
+
+- name: Install Vector
+  tags: [vector]
+  hosts: vector
+  roles:
+    - vector-role
+
+- name: Install lighthouse
+  hosts: lighthouse
+  tags: lighthouse
+  roles:
+    - lighthouse-role
+
+
+- name: Install Clickhouse
+  hosts: clickhouse
+  tags: [clickhouse]
+  roles: 
+    - clickhouse
