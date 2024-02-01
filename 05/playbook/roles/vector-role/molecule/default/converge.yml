@@ -43,18 +43,6 @@
         dest: /usr/bin/systemctl
         mode: "+x"
         force: true
- #   - name: ReCollect system info
-#      ansible.builtin.setup:
-#    - name: Get Clickhouse IP from docker engine
-#      ansible.builtin.command: "docker inspect -f {{'{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'}} clickhouse-01"
-#      register: cmd_res
-#      changed_when: false
-#      failed_when: cmd_res.rc != 0
-#      delegate_to: localhost
-#    - name: Set Clickhouse IP to facts
-#      ansible.builtin.set_fact:
-#        clickhouse_host: "{{ cmd_res.stdout }}"
-#      when: cmd_res.rc == 0
   tasks:
     - name: "Include vector-role"
       ansible.builtin.include_role:
