@@ -23,7 +23,7 @@
 
 
 ```
-
+</details>
 
 2. Перейдите в каталог с ролью vector-role и создайте сценарий тестирования по умолчанию при помощи `molecule init scenario --driver-name docker`.
 
